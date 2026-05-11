@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JIJEN CORP</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+<div class="hero-content">
+<h1>JIJEN CORP</h1>
+<p>Jasa Pembayaran Digital Premium</p>
+<a href="#checkout" class="btn">Mulai Checkout</a>
+</div>
+</header>
+
+<section class="categories">
+<h2>Kategori Layanan</h2>
+<div class="grid">
+<div class="card">Pulsa</div>
+<div class="card">Paket Data</div>
+<div class="card">PLN</div>
+<div class="card">PDAM</div>
+<div class="card">Finance</div>
+<div class="card">Pegadaian</div>
+</div>
+</section>
+
+<section id="checkout" class="checkout">
+<h2>Checkout</h2>
+<form id="orderForm">
+<input type="text" placeholder="Nama Lengkap" required>
+<input type="text" placeholder="Nomor WhatsApp" required>
+
+<select>
+<option>Pulsa</option>
+<option>Paket Data</option>
+<option>PLN</option>
+<option>PDAM</option>
+</select>
+
+<input type="text" placeholder="ID Pelanggan / No Tujuan" required>
+
+<select>
+<option>BCA - 0482254975</option>
+<option>SeaBank - 901338501011</option>
+<option>DANA - 0881027903740</option>
+<option>GoPay - 087873919107</option>
+<option>QRIS (chat admin)</option>
+</select>
+
+<input type="file">
+
+<button class="btn">Buat Pesanan</button>
+</form>
+</section>
+
+<section class="tracker">
+<h2>Status Tracker</h2>
+
+<div class="steps">
+<div class="step active">Pending</div>
+<div class="step">Bukti Kirim</div>
+<div class="step">Admin Konfirmasi</div>
+<div class="step">Diproses</div>
+<div class="step">Selesai</div>
+</div>
+
+<button class="btn" onclick="nextStep()">Simulasi Progress</button>
+</section>
+
+<footer>
+<h3>JIJEN CORP</h3>
+<p>Modern Digital Payment Website</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
